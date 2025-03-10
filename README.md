@@ -1,5 +1,9 @@
 # Installation guide
 
+## Install terminal emulator
+
+I currently use [Kitty](https://sw.kovidgoyal.net/kitty/).
+
 ## Install zsh
 
 Install [zsh](https://www.zsh.org/), [oh-my-zsh](https://ohmyz.sh/) and some handy plugins. Check out the [installation guide](/docs/INSTALL_ZSH.md).
