@@ -1,6 +1,6 @@
 # Install Zsh
 
-## Install Zsh on SSH Server (No sudo Access)
+## 1. Install Zsh on SSH Server (No sudo Access)
 
 ### Step 1: Download & Extract Zsh Source
 ```bash
@@ -36,7 +36,7 @@ Then, restart your SSH session.
 
 ---
 
-## Install Zsh on Personal Computer
+## 2. Install Zsh on Personal Computer
 
 ### Ubuntu/Debian
 ```bash
