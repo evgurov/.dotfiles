@@ -1,4 +1,4 @@
-# Installing GNU Stow
+# Install GNU Stow
 
 ## 1. Installing GNU Stow on an SSH Server (No sudo Access)
 Since you don’t have root privileges, you need to install Stow in your home directory.
