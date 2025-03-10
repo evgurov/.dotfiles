@@ -74,6 +74,7 @@ Restart your terminal and run:
 ```bash
 p10k configure
 ```
+or use `.p10k.zsh` configuration from this repo.
 
 ---
 
