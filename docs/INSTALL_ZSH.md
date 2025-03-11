@@ -8,8 +8,6 @@ sudo apt update && sudo apt install zsh -y
 chsh -s $(which zsh)
 ```
 
-After installation, restart your terminal or log out and back in.
-
 ---
 
 ## Install Oh My Zsh
