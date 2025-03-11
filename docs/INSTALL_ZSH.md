@@ -5,9 +5,21 @@
 ### Ubuntu/Debian
 ```bash
 sudo apt update && sudo apt install zsh -y
-chsh -s $(which zsh)
 ```
 
+## Change default shell to zsh if needed
+
+If you have sudo password:
+```bash
+chsh -s $(which zsh)
+```
+If you don't have password add this to the end of `.bashrc` file.
+```
+# Start zsh if it's available
+if command -v zsh >/dev/null 2>&1; then
+    exec zsh
+fi
+```
 ---
 
 ## Install Oh My Zsh
