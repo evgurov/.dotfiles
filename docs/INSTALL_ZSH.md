@@ -8,18 +8,6 @@ sudo apt update && sudo apt install zsh -y
 chsh -s $(which zsh)
 ```
 
-### Arch Linux
-```bash
-sudo pacman -S zsh
-chsh -s $(which zsh)
-```
-
-### macOS (Using Homebrew)
-```bash
-brew install zsh
-chsh -s /bin/zsh
-```
-
 After installation, restart your terminal or log out and back in.
 
 ---
