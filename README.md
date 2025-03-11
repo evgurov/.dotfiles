@@ -10,7 +10,7 @@ Install [zsh](https://www.zsh.org/), [oh-my-zsh](https://ohmyz.sh/) and some han
 
 ### Step 3: Install tmux
 
-Install [tmux](https://github.com/tmux/tmux) if not yet installed. On most ssh servers it is already installed.
+Install [tmux](https://github.com/tmux/tmux) if not yet installed.
 
 ### Step 4: Install neovim
 
