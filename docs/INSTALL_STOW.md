@@ -38,31 +38,10 @@ If you see Stow's version, it’s installed successfully.
 
 ## 2. Installing GNU Stow on a Personal Computer (With sudo Access)
 
-### Option 1: Install Using Package Manager (Recommended)
-#### For Debian/Ubuntu**
+#### For Debian/Ubuntu
 ```bash
 sudo apt update
 sudo apt install stow -y
-```
-#### For Arch Linux
-```bash
-sudo pacman -S stow
-```
-#### For macOS (Homebrew)
-```bash
-brew install stow
-```
-
-### Option 2: Install from Source (For Latest Version)
-If you want the latest version or your package manager doesn’t have Stow:
-```bash
-cd /usr/local/src
-sudo wget http://ftp.gnu.org/gnu/stow/stow-2.4.1.tar.gz  # Update version if needed
-sudo tar -xvzf stow-2.4.1.tar.gz
-cd stow-2.4.1
-sudo ./configure
-sudo make
-sudo make install
 ```
 
 ### Verify Installation
