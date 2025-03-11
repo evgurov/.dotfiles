@@ -24,8 +24,8 @@ make install
 ### Step 3: Add Stow to PATH
 Modify your shell configuration file (e.g., `~/.bashrc` or `~/.zshrc`) to include Stow in your path:
 ```bash
-echo 'export PATH="$HOME/local/bin:$PATH"' >> ~/.zshrc
-source ~/.zshrc  # Apply changes immediately
+echo 'export PATH="$HOME/local/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc  # Apply changes immediately
 ```
 
 ### Step 4: Verify Installation
