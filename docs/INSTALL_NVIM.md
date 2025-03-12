@@ -26,8 +26,7 @@ If you don’t have root access, you can install Neovim in your home directory.
    ```
 3. Add Neovim to your `PATH` so you can use it from anywhere:
    ```bash
-   echo 'export PATH=$HOME/local/bin:$PATH' >> ~/.zshrc
-   source ~/.zshrc
+   export PATH=$HOME/local/bin:$PATH
    ```
 4. Verify the installation:
    ```bash
