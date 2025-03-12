@@ -35,38 +35,6 @@ If you don’t have root access, you can install Neovim in your home directory.
 
 ---
 
-## 🛠️ Alternative: Build Neovim from Source  
-If the prebuilt binary doesn't work or you need the latest version, you can compile Neovim from source.
-
-### 1️⃣ **Clone and Build Neovim**
-1. Install the necessary dependencies (if not already installed).
-2. Run the following commands:
-   ```bash
-   mkdir -p $HOME/local/src
-   cd $HOME/local/src
-
-   # Clone the Neovim repository
-   git clone https://github.com/neovim/neovim.git
-   cd neovim
-
-   # Build Neovim with a custom installation prefix
-   make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/local" CMAKE_BUILD_TYPE=Release -j$(nproc)
-
-   # Install Neovim locally
-   make install
-   ```
-3. Add Neovim to your `PATH`:
-   ```bash
-   echo 'export PATH=$HOME/local/bin:$PATH' >> ~/.zshrc
-   source ~/.zshrc
-   ```
-4. Verify the installation:
-   ```bash
-   nvim --version
-   ```
-
----
-
 ## 🌍 Global Installation (Requires `sudo`)
 
 If you have **sudo** privileges, install Neovim system-wide so all users can access it.
@@ -77,23 +45,3 @@ If you have **sudo** privileges, install Neovim system-wide so all users can acc
 sudo apt update
 sudo apt install -y neovim
 ```
-
-#### 🔴 **For Arch Linux**
-```bash
-sudo pacman -S neovim
-```
-
-### 2️⃣ **Verify the Installation**
-```bash
-nvim --version
-```
-
----
-
-## 🎉 Conclusion
-Neovim is now installed! You can launch it by running:
-```bash
-nvim
-```
-Let me know if you need further assistance. 🚀
-
