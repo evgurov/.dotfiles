@@ -16,10 +16,10 @@ If you don’t have root access, you can install Neovim in your home directory.
    cd $HOME/local/bin
 
    # Download the latest Neovim binary
-   curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+   curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.appimage
 
    # Make it executable
-   chmod +x nvim.appimage
+   chmod u+x nvim-linux-x86_64.appimage
 
    # Rename for convenience
    mv nvim.appimage nvim
