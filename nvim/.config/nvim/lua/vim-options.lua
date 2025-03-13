@@ -9,3 +9,6 @@ vim.g.mapleader = ' '      -- Set leader
 vim.opt.number = true      -- Enable line numbers
 vim.opt.relativenumber = true -- Show relative line numbers
 
+-- Set rulers
+vim.opt.colorcolumn = "100"
+
