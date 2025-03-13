@@ -2,7 +2,7 @@
 
 ### Step 0: Clone the repo
 
-Clone this repository:
+Clone this repository to the home dir:
 ```bash
 git clone git@github.com:evgurov/.dotfiles.git ~
 ```
