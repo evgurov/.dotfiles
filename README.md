@@ -1,7 +1,8 @@
 # Installation guide
 
-### Step 0: clone this repo
+### Step 0: Clone the repo
 
+Clone this repository:
 ```bash
 git clone git@github.com:evgurov/.dotfiles.git ~
 ```
