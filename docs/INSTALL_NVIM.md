@@ -1,14 +1,14 @@
-# 📚 Installing Neovim (Local & Global)
+# Installing Neovim (Local & Global)
 
 This guide provides step-by-step instructions to install **Neovim** either **locally (without sudo)** or **globally (with sudo access)** on Linux.
 
 ---
 
-## 🚀 Local Installation (Without `sudo`)
+## Local Installation (Without `sudo`)
 
 If you don’t have root access, you can install Neovim in your home directory.
 
-### 1️⃣ **Download Prebuilt Binary (Recommended)**
+### **Download Prebuilt Binary (Recommended)**
 1. Open a terminal.
 2. Run the following commands to download and install Neovim:
    ```bash
@@ -35,12 +35,12 @@ If you don’t have root access, you can install Neovim in your home directory.
 
 ---
 
-## 🌍 Global Installation (Requires `sudo`)
+## Global Installation (Requires `sudo`)
 
 If you have **sudo** privileges, install Neovim system-wide so all users can access it.
 
-### 1️⃣ **Install via Package Manager**
-#### 🟢 **For Debian/Ubuntu**
+### **Install via Package Manager**
+#### **For Debian/Ubuntu**
 ```bash
 sudo apt update
 sudo apt install -y neovim
