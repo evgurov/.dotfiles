@@ -22,10 +22,12 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
-			local capabilities = require("blink.cmp").get_lsp_capabilities()
 			local lspconfig = require("lspconfig")
+			local blink = require("blink.cmp")
 
-			lspconfig.lua_ls.setup({ capabilities = capabilities })
+			local capabilities = blink.get_lsp_capabilities({}, false)
+
+			lspconfig.lua_ls.setup({capabilities = capabilities})
 			lspconfig.basedpyright.setup({
 				settings = {
 					basedpyright = {
@@ -34,9 +36,8 @@ return {
 						},
 					},
 				},
-				capabilities = capabilities,
 			})
-			lspconfig.ruff.setup({ capabilities = capabilities })
+			lspconfig.ruff.setup({})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
