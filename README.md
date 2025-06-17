@@ -4,7 +4,8 @@
 
 Clone this repository to the home dir:
 ```bash
-git clone git@github.com:evgurov/.dotfiles.git ~
+cd ~
+git clone git@github.com:evgurov/.dotfiles.git
 ```
 ### Step 1: Install GNU Stow
 
