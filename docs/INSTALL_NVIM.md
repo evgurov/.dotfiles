@@ -22,7 +22,7 @@ If you don’t have root access, you can install Neovim in your home directory.
    chmod u+x nvim-linux-x86_64.appimage
 
    # Rename for convenience
-   mv nvim.appimage nvim
+   mv nvim-linux-x86_64.appimage nvim
    ```
 3. Add Neovim to your `PATH` so you can use it from anywhere:
    ```bash
