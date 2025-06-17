@@ -25,13 +25,16 @@ stow kitty
 
 ### Step 3: Install zsh
 
-Install [zsh](https://www.zsh.org/), [oh-my-zsh](https://ohmyz.sh/) and some handy plugins. Check out the [installation guide](/docs/INSTALL_ZSH.md).
+Stow before installation!
 
 Stow zsh config:
 ```bash
 cd ~/.dotfiles
 stow zsh
 ```
+
+Install [zsh](https://www.zsh.org/), [oh-my-zsh](https://ohmyz.sh/) and some handy plugins. Check out the [installation guide](/docs/INSTALL_ZSH.md).
+
 
 ### Step 4: Install tmux
 
