@@ -127,3 +127,5 @@ eval "$(pyenv init - bash)"
 
 # Add path to 'stow' and other bins
 export PATH="$HOME/local/bin:$PATH"
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
