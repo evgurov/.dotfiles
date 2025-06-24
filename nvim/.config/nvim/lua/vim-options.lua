@@ -16,3 +16,6 @@ vim.opt.colorcolumn = "100"
 
 -- Set clipboard to copy and paste
 vim.opt.clipboard="unnamedplus"
+
+-- Reserve some lines when scrolling
+vim.opt.scrolloff = 8
