@@ -47,10 +47,17 @@ return {
                 map("<leader>gd", vim.lsp.buf.definition,   "Go to definition")
                 map("<leader>gr", vim.lsp.buf.references,   "References")
                 map("<leader>ca", vim.lsp.buf.code_action,  "Code action")
-                -- manual formatter: <leader>cf
+                -- manual formatter
                 map("<leader>cf", function()
                     vim.lsp.buf.format({ timeout_ms = 2000 })
                 end, "Format (Ruff)")
+                -- organize imports
+                map('<leader>ci', function()
+                    vim.lsp.buf.code_action({
+                        context = { only = { 'source.organizeImports' } },
+                        apply   = true,
+                    })
+                end, 'Organise imports (Ruff)')
                 map("<leader>d", function()
                     vim.diagnostic.open_float()
                 end, "Show diagnostic")
@@ -73,6 +80,7 @@ return {
                     basedpyright = {
                         analysis = {
                             typeCheckingMode = "off",
+                            autoImportCompletions = false,
                         },
                         disableOrganizeImports = true,
                     },
@@ -104,31 +112,4 @@ return {
             })
         end,
     },
-    -- {
-	-- 	"neovim/nvim-lspconfig",
-	-- 	config = function()
-	-- 		local lspconfig = require("lspconfig")
-	-- 		local blink = require("blink.cmp")
-
-	-- 		local capabilities = blink.get_lsp_capabilities({}, false)
-
-	-- 		lspconfig.lua_ls.setup({capabilities = capabilities})
-	-- 		lspconfig.basedpyright.setup({
-	-- 			settings = {
-	-- 				basedpyright = {
-	-- 					analysis = {
-	-- 						typeCheckingMode = "off",
-	-- 					},
-    --                     disableOrganizeImports = true,
-	-- 				},
-	-- 			},
-	-- 		})
-	-- 		lspconfig.ruff.setup({})
-
-	-- 		vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-	-- 		vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
-	-- 		vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
-	-- 		vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
-	-- 	end,
-	-- },
 }

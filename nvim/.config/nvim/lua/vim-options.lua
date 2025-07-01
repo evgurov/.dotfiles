@@ -19,3 +19,10 @@ vim.opt.clipboard="unnamedplus"
 
 -- Reserve some lines when scrolling
 vim.opt.scrolloff = 8
+
+-- Add signcolumn
+vim.opt.signcolumn = "yes"
+
+-- move selected
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
