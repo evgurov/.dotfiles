@@ -15,12 +15,12 @@ For managing symlinks I use [GNU Stow](https://www.gnu.org/software/stow/) tool.
 
 ### Step 2: Install desired terminal emulator (If on PC)
 
-I currently use [Kitty](https://sw.kovidgoyal.net/kitty/).
+I currently use [Ghostty](https://ghostty.org/).
 
-Stow kitty config:
+Stow ghostty config:
 ```bash
 cd ~/.dotfiles
-stow kitty
+stow ghostty
 ```
 
 ### Step 3: Install zsh
